@@ -54,9 +54,10 @@ for c in "abcdefghijklmnopqrstuvwxyz":
     code = ord(c) - ord('a') + 4
     keycodes[code] = c
 
-for c in "1234567890":
-    code = ord(c) - ord('1') + 30
-    keycodes[code] = c
+nums = "1234567890"
+for i in range(len(nums)):
+    code = i + 30
+    keycodes[code] = nums[i]
 
 def get_modifiers(L):
     """
